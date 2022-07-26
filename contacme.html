@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aboutme</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/6b0036f03f.js" crossorigin="anonymous"></script>
+    <style>
+        #hidemark + div {
+            visibility:hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="headerPages">
+        <header>
+            <nav class="navbar">
+                <div class="brand">
+                    <h2>D<span>C</span></h2>
+                </div>
+                <ul class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutme.html">Who's David?</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="contacme.html"  class="active">Contact me</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="container-contact">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d63636.58464722396!2d-75.7155693815335!3d4.542356218300552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sco!4v1658702311439!5m2!1sen!2sco" 
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade" class="mapArmenia">
+        </iframe>
+        <div class="contact-form"> 
+            <h4>Write me :</h4>
+            <form class="form-group" method="post" action="/php/send.php">
+                <input type="text" placeholder="name" name="name">
+                <input type="email" placeholder="Email" name="Email">
+                <textarea placeholder="Place you message" name="message"></textarea>
+                <button type="submit" class="btn-submit">
+                    Send email
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <h3>David Clavijo</h3>
+        <h3>Engineer | Data Analyst | Data Scientist</h3>
+        <div class="social-network">
+            <a href="https://www.linkedin.com/in/david-clavijo-suarez-a8a98b91" 
+            aria-label="Follow this link to go my linkedin">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.kaggle.com/davidclavijosuarez" 
+            aria-label="Follow this link to go my kaggle">
+                <i class="fa-brands fa-kaggle"></i>
+            </a>
+            <a href="https://github.com/davidcla07" 
+            aria-label="Follow this link to go my github" target="_blank">
+                <i class="fa-brands fa-github"></i>
+            </a>  
+        </div>
+    </footer>
+    <div id="hidemark"></div>
+</body>
